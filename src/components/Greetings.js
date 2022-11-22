@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default function Greeting(props) {
+export const Greeting = (props) => {
   const lang = props.lang;
   let children;
 
@@ -22,4 +20,4 @@ export default function Greeting(props) {
       </div>
     </>
   );
-}
+};

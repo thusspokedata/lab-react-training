@@ -1,13 +1,11 @@
-import React from 'react';
-
-export default function IdCard({
+export const IdCard = ({
   firstName,
   lastName,
   gender,
   height,
   birth,
   picture,
-}) {
+}) => {
   return (
     <>
       <div className="user mw-50 m-5">
@@ -54,4 +52,4 @@ export default function IdCard({
       </div>
     </>
   );
-}
+};

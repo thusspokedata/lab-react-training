@@ -2,7 +2,7 @@ import React from 'react';
 import visaPic from '../assets/images/visa.png';
 import masterPic from '../assets/images/master-card.svg';
 
-export default function IdCard({
+export const CreditCard = ({
   type,
   number,
   expirationMonth,
@@ -11,17 +11,8 @@ export default function IdCard({
   owner,
   bgColor,
   color,
-}) {
-  let logo = '';
-
-  switch (type) {
-    case 'Visa':
-      logo = visaPic;
-      break;
-    case 'Master Card':
-      logo = masterPic;
-      break;
-  }
+}) => {
+  let logo = type === 'Visa' ? visaPic : masterPic;
 
   let coverNum = '*'.repeat(number.slice(0, -4).length) + number.slice(-4);
   let expiration =
@@ -57,4 +48,4 @@ export default function IdCard({
       </div>
     </>
   );
-}
+};

@@ -1,10 +1,8 @@
-import React from 'react';
-
 function rgbToHex(r, g, b) {
   return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
 
-export default function BoxColor({ r, g, b }) {
+export function BoxColor({ r, g, b }) {
   let style = { backgroundColor: `rgb(${r}, ${g}, ${b})` };
 
   return (

@@ -1,8 +1,9 @@
-import { React, useState } from 'react';
+import { useState } from 'react';
 
-export default function LikeButton({ number1, number2 }) {
+export function LikeButton() {
   const [count, setCount] = useState(0);
   const [count1, setCount1] = useState(0);
+
   function random_rgba() {
     var o = Math.round,
       r = Math.random,
@@ -19,13 +20,12 @@ export default function LikeButton({ number1, number2 }) {
       ')'
     );
   }
+
   function handleClick1() {
-    console.log('click');
-    setCount((currentState) => currentState + 1);
+    setCount((e) => e + 1);
   }
   function handleClick2() {
-    console.log('click');
-    setCount1((currentState) => currentState + 1);
+    setCount1((e1) => e1 + 1);
   }
   return (
     <>
