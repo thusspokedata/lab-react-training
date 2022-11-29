@@ -29,7 +29,7 @@ export function LikeButton() {
   }
   return (
     <>
-      <div className="m-5 element-block">
+      <div className="m-5 element-block mw-50">
         <button
           onClick={handleClick1}
           style={{ backgroundColor: `${random_rgba()}` }}

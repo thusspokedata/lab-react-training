@@ -7,3 +7,4 @@ export * from './IdCard';
 export * from './LikeButton';
 export * from './Random';
 export * from './Rating';
+export * from './DriverCard';

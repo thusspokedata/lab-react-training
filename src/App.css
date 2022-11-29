@@ -49,11 +49,19 @@ html {
 .m-5 {
   margin: 5px;
 }
+
+.ml-10 {
+  margin-left: 10px;
+}
 .mb-2 {
   margin-bottom: 2px;
 }
 .pb-5 {
   padding-bottom: 5px;
+}
+
+.pt-25 {
+  padding-top: 25px;
 }
 
 .py-15 {
@@ -64,6 +72,7 @@ html {
   padding-left: 25px;
   padding-right: 25px;
 }
+
 .user {
   border-style: solid;
   display: flex;
@@ -92,6 +101,10 @@ html {
 
 .border {
   border-style: solid;
+}
+
+.border-rounded {
+  border-radius: 5px;
 }
 
 .mw-50 {
@@ -134,4 +147,30 @@ html {
 
 h2 {
   font-size: 30px;
+}
+
+.bg-card {
+  background-color: #455db5;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.img-rounded {
+  border-radius: 50%;
+}
+.w-120 {
+  width: 120px;
+}
+
+.car-driver-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
